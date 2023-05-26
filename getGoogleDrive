@@ -1,0 +1,6 @@
+def getGoogleDrive(url):
+  import pandas
+  file_id=url.split('/')[-2]
+  dwn_url='https://drive.google.com/uc?id=' + file_id
+  data = pd.read_csv(dwn_url)
+  return data
