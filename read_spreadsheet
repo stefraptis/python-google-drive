@@ -1,0 +1,4 @@
+def read_spreadsheet(spreadsheet_id,sheet_name):
+  url = f'https://docs.google.com/spreadsheets/d/{spreadsheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
+  df = pd.read_csv(url)
+  return df
